@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tirador de dados para rol.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Tiradora de dados.</h1>
+    <h2>Por José Luis</h2>
+    <div class="tiradora">
+        <input type="text" id="pantalla" readonly>
+        <br>
+        <input type="button" value="1"onclick="agregar('1')">
+        <input type="button" value="2"onclick="agregar('2')">
+        <input type="button" value="3"onclick="agregar('3')">
+        <input type="button" value="4"onclick="agregar('4')">
+        <input type="button" value="5"onclick="agregar('5')">
+        <input type="button" value="-"onclick="agregar('-')">
+        <input type="button" value="+"onclick="agregar('+')">       
+        <br>        
+        <input type="button" value="6"onclick="agregar('6')">
+        <input type="button" value="7"onclick="agregar('7')">
+        <input type="button" value="8"onclick="agregar('8')">
+        <input type="button" value="9"onclick="agregar('9')">
+        <input type="button" value="0"onclick="agregar('0')">
+        <input type="button" value="*"onclick="agregar('*')">
+        <input type="button" value="/"onclick="agregar('/')">
+        <br>
+        <input type="button" value="1d2"onclick="tirarDado('1d2')">
+        <input type="button" value="1d3"onclick="tirarDado('1d3')">
+        <input type="button" value="1d4"onclick="tirarDado('1d4')">
+        <input type="button" value="1d5"onclick="tirarDado('1d5')">
+        <input type="button" value="1d6"onclick="tirarDado('1d6')">
+        <input type="button" value="=" onclick="calcular()">
+        <input type="button" value="C"onclick="borrar()">
+        <br>
+        <input type="button" value="1d8"onclick="tirarDado('1d8')">
+        <input type="button" value="1d10"onclick="tirarDado('1d10')">
+        <input type="button" value="1d12"onclick="tirarDado('1d12')">
+        <input type="button" value="1d20"onclick="tirarDado('1d20')">
+        <input type="button" value="1d100"onclick="tirarDado('1d100')">
+        <br>
+        <input type="text" id="customRoll" placeholder="Ej: 23d10">
+        <input type="button" value="Tirar" onclick="tirarDadoCustom()">
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
